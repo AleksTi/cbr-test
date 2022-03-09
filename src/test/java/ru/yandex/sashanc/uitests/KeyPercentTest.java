@@ -17,16 +17,14 @@ import static com.codeborne.selenide.Selenide.screenshot;
 
 public class KeyPercentTest extends BaseTest {
     private static final Logger log = LoggerFactory.getLogger(KeyPercentTest.class);
-    private MainYandexPage mainYandexPage;
-    private CbrPage cbrPage;
 
 // 1. Открыть браузер и развернуть на весь экран
 // Реализовано в BaseTest.class
 
     @Test
     public void openYandex() {
-        mainYandexPage = new MainYandexPage();
-        cbrPage = new CbrPage();
+        MainYandexPage mainYandexPage = new MainYandexPage();
+        CbrPage cbrPage = new CbrPage();
 
 // 2. Зайти на yandex.ru
         mainYandexPage.open();
