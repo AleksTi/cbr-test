@@ -1,4 +1,4 @@
-package uitests;
+package ru.yandex.sashanc.uitests;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
@@ -11,12 +11,12 @@ import java.io.IOException;
 abstract public class BaseTest {
 
     public void setUp() throws IOException {
+        System.getProperties().load(ClassLoader.getSystemResourceAsStream("test.properties"));
         WebDriverManager.firefoxdriver().setup();
         Configuration.browser = "firefox";
         Configuration.driverManagerEnabled = true;
         Configuration.browserSize = "1536x920";
         Configuration.reportsFolder = "test-result/reports";
-        System.getProperties().load(ClassLoader.getSystemResourceAsStream("config.properties"));
     }
 
     @Before

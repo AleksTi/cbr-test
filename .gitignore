@@ -3,6 +3,7 @@
 /out/
 /target/
 /test-result/
+/logs/
 *.iml
 
 #/src/main/resources/config.properties
