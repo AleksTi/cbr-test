@@ -1,0 +1,13 @@
+/.idea/
+/build/
+/out/
+/target/
+/test-result/
+*.iml
+
+#/src/main/resources/config.properties
+#/src/main/resources/user.properties
+
+#/src/test/resources/config.properties
+/src/test/resources/user.properties
+
